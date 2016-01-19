@@ -47,3 +47,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # Needed on Heroku. Enables serving assets in production and setting your logger to standard out.
+  gem 'rails_12factor', '~> 0.0.3',   group: :production
+
+  # Fast, threaded, and highly concurrent web server. Suggested by Heroku
+  gem 'puma', '~> 2.15', '>= 2.15.3', group: :production
+end
