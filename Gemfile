@@ -37,6 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # File Upload
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
+gem 'refile-fog'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -59,5 +60,5 @@ group :production do
   gem 'puma', '~> 2.15', '>= 2.15.3'
 
   # File Upload Refile on heroku wants Amazon S3 storage
-  gem "refile-s3"
+  #gem "refile-s3"
 end
