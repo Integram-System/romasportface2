@@ -35,8 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # File Upload
-gem "mini_magick"
-gem "refile", require: ["refile/rails", "refile/image_processing"]
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

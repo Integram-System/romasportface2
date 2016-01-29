@@ -15,6 +15,17 @@
     <%= f.label :image_id %><br>
     <%= f.text_field :image_id %>
   </div>
+
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.attachment_field :image %>
+    <% if @blog.image_id? %>
+      <%= image_tag attachment_url(@blog, :image, :fill, 100, 100) %> <br>
+      <%= f.label :remove_image %><br>
+      <%= f.check_box :remove_image %>
+    <% end %>
+  </div>
+
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
