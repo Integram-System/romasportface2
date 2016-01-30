@@ -1,9 +1,4 @@
-#if Rails.env.production?
-
-
-
-#end
-
+if Rails.env.production?
 
 require "refile/fog"
 
@@ -18,4 +13,6 @@ credentials = {
 Refile.configure do |config|
   config.cache = Refile::Fog::Backend.new(prefix: "cache", **credentials)
   config.store = Refile::Fog::Backend.new(prefix: "store", **credentials)
+end
+
 end
