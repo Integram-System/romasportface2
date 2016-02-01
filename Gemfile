@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # File Upload
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
-gem 'refile-fog', group: :production
+gem 'refile-fog'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
