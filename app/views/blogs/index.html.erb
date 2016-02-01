@@ -12,7 +12,40 @@
 
   <!-- Content
   ============================================= -->
-  <%= render "mocks/blog/content" %>
+  <section id="content">
+
+    <div class="content-wrap">
+
+      <div class="container clearfix">
+
+        <!-- Post Content
+        ============================================= -->
+        <div class="postcontent nobottommargin clearfix">
+
+          <!-- Posts
+          ============================================= -->
+          <div id="posts" class="small-thumbs">
+              <%= render "blogs/index/post_list" %>
+          </div><!-- #posts end -->
+
+          <!-- Pagination
+          ============================================= -->
+          <ul class="pager nomargin">
+            <li class="previous"><a href="#">&larr; Older</a></li>
+            <li class="next"><a href="#">Newer &rarr;</a></li>
+          </ul><!-- .pager end -->
+
+        </div><!-- .postcontent end -->
+
+        <!-- Sidebar
+        ============================================= -->
+        <%= render "mocks/blog/sidebar" %>
+
+      </div>
+
+    </div>
+
+  </section><!-- #content end -->
 
   <!-- Footer
   ============================================= -->
