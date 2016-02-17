@@ -570,7 +570,7 @@ var SEMICOLON = SEMICOLON || {};
 			});
 		},
 
-		pageTransition: function(){
+/**/		pageTransition: function(){
 			if( !$body.hasClass('no-transition') ){
 				var animationIn = $body.attr('data-animation-in'),
 					animationOut = $body.attr('data-animation-out'),
@@ -662,7 +662,7 @@ var SEMICOLON = SEMICOLON || {};
 				});
 			}
 		},
-
+/**/
 		lazyLoad: function() {
 			var lazyLoadEl = $('[data-lazyload]');
 			if( lazyLoadEl.length > 0 ) {

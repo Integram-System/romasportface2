@@ -5,14 +5,14 @@
   <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
 </head>
-<body class="stretched">
+<body class="stretched no-transition">
 
   <%= yield %>
 
-  <%= javascript_include_tag 'functions', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'functions', 'data-turbolinks-track' => false %>
 
 </body>
 </html>
