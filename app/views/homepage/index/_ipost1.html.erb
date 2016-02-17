@@ -1,0 +1,27 @@
+<div class="ipost clearfix">
+  <div class="col_half bottommargin-sm">
+    <div class="entry-image">
+      <a href="#"><img class="image_fade" src="images/magazine/7.jpg" alt="Image"></a>
+
+      <% if @post1.image.present? %>
+        <%= image_tag attachment_url(@post1, :image, :fill, 400, 300), alt: "post image", class: "image_fade" %>
+      <% else %>
+        nessuna immagine
+      <% end %>
+
+    </div>
+  </div>
+  <div class="col_half bottommargin-sm col_last">
+    <div class="entry-title">
+      <h3><a href="blog-single.html"> <%= @post1.title %> </a></h3>
+    </div>
+    <ul class="entry-meta clearfix">
+      <li><i class="icon-calendar3"></i> <%= @post1.updated_at %> </li>
+      <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 21</a></li>
+      <li><a href="#"><i class="icon-camera-retro"></i></a></li>
+    </ul>
+    <div class="entry-content">
+      <p> <%= @post1.content %> </p>
+    </div>
+  </div>
+</div>
