@@ -11,13 +11,13 @@
 				<!-- Logo
 				============================================= -->
 				<div id="logo">
-					<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><%= image_tag("logo.png", :alt => "RomaSportFaceLogo") %>
+					<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><%= image_tag "logo.png", :alt => "RomaSportFaceLogo" %>
 
-					<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="RomaSportFace Logo"></a>
+					<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><%= image_tag "logo@2x.png", :alt => "RomaSportFaceLogo" %>
 				</div><!-- #logo end -->
 
 				<div class="top-advert">
-					<img src="images/magazine/ad6.jpg" alt="Banner RomaSportFace">
+					<%= image_tag "magazine/ad6.jpg", :alt => "Banner RomaSportFace" %>
 				</div>
 
 			</div>
@@ -85,7 +85,7 @@
 							<div class="fslider bnews-slider nobottommargin" data-speed="800" data-pause="6000" data-arrows="false" data-pagi="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-                                    	<div class="slide"><a href="#"><strong>Champions League, Bayern Monaco-Juventus 4-2: Allegri sfiora l'impresa, ai quarti va Guardiola...</strong></a></div>
+                    <div class="slide"><a href="#"><strong>Champions League, Bayern Monaco-Juventus 4-2: Allegri sfiora l'impresa, ai quarti va Guardiola...</strong></a></div>
 										<div class="slide"><a href="#"><strong>Tris all'Arsenal, Barcellona ai quarti di Champions. Il Barcellona soffre più del previsto ma si impone per 3-1 sull’Arsenal...</strong></a></div>
 										<div class="slide"><a href="#"><strong>Lazio fuori dall'Europa League: 0-3 all'Olimpico con lo Sparta Praga...</strong></a></div>
 									</div>
@@ -105,84 +105,91 @@
 								<div class="fslider flex-thumb-grid grid-6" data-animation="fade" data-arrows="true" data-thumbs="true">
 									<div class="flexslider">
 										<div class="slider-wrap">
-											<div class="slide" data-thumb="images/magazine/thumb/30.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/30.jpg')%>">
+                        <!-- <div class="swiper-slide dark" style="background-image: url(<%=image_path('slider/swiper/1.jpg')%>);"> -->
 												<a href="blog-single-small15.html">
-													<img src="images/magazine/30.jpg" alt="SS Lazio Europa League">
+													<%= image_tag "magazine/30.jpg", :alt => "SS Lazio Europa League" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
 																<h3>La Lazio è 'cieca' ma i laziali ci vedono benissimo</h3>
 															</div>
 															<div class="text-overlay-meta">
-                                                            	<span>di Samuel Schiaffino</span>
+                              <span>di Samuel Schiaffino</span>
 															</div>
 														</div>
 													</div>
 												</a>
 											</div>
-                                            <div class="slide" data-thumb="images/magazine/thumb/28.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/28.jpg')%>">
 												<a href="blog-single-small14.html">
-													<img src="images/magazine/28.jpg" alt="SS Lazio Europa League">
+                          <%= image_tag "magazine/28.jpg", :alt => "SS Lazio Europa League" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
 																<h3>La fortuna di Lotito?</h3>
 															</div>
 															<div class="text-overlay-meta">
-                                                            	<span>di Christian Vitali</span>
+                              <span>di Christian Vitali</span>
 															</div>
 														</div>
 													</div>
 												</a>
 											</div>
-                                            <div class="slide" data-thumb="images/magazine/thumb/27.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/27.jpg')%>">
 												<a href="blog-single-small13.html">
-													<img src="images/magazine/27.jpg" alt="">
+                          <%= image_tag "magazine/27.jpg", :alt => "SS Lazio Europa League" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
 																<h3>Roma, non ti fermare</h3>
 															</div>
 															<div class="text-overlay-meta">
-                                                            	<span>di David De Maria</span>
+                              <span>di David De Maria</span>
 															</div>
 														</div>
 													</div>
 												</a>
 											</div>
-                                            <div class="slide" data-thumb="images/magazine/thumb/25.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/25.jpg')%>">
 												<a href="blog-single-small12.html">
-													<img src="images/magazine/25.jpg" alt="">
+                          <%= image_tag "magazine/25.jpg", :alt => "Blog RomaSportFace" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
 																<h3>Il fenomeno Leicester</h3>
 															</div>
 															<div class="text-overlay-meta">
-                                                            	<span>di Paolo Rizzi</span>
+                              <span>di Paolo Rizzi</span>
 															</div>
 														</div>
 													</div>
 												</a>
 											</div>
-                                            <div class="slide" data-thumb="images/magazine/thumb/24.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/24.jpg')%>">
 												<a href="blog-single-small11.html">
-													<img src="images/magazine/24.jpg" alt="">
+                          <%= image_tag "magazine/24.jpg", :alt => "RomaSportFace" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
 																<h3>L'Inter di Mancini</h3>
 															</div>
 															<div class="text-overlay-meta">
-                                                            	<span>di Christian Vitali</span>
+                              <span>di Christian Vitali</span>
 															</div>
 														</div>
 													</div>
 												</a>
 											</div>
-                                            <div class="slide" data-thumb="images/magazine/thumb/21.jpg">
+
+                      <div class="slide" data-thumb="<%= image_path('magazine/thumb/21.jpg')%>">
 												<a href="blog-single-small10.html">
-													<img src="images/magazine/21.jpg" alt="">
+                          <%= image_tag "magazine/21.jpg", :alt => "Francesco Totti" %>
 													<div class="overlay">
 														<div class="text-overlay">
 															<div class="text-overlay-title">
@@ -212,7 +219,7 @@
 								<div class="ipost clearfix">
 									<div class="col_half bottommargin-sm">
 										<div class="entry-image">
-											<a href="blog-single-small15.html"><img class="image_fade" src="images/magazine/30a.jpg" alt="SS Lazio vs. Sparta Praga"></a>
+											<a href="blog-single-small15.html"><%= image_tag "magazine/30a.jpg", class: "image_fade", alt: "SS Lazio Europa League" %></a>
 										</div>
 									</div>
 									<div class="col_half bottommargin-sm col_last">
@@ -222,7 +229,7 @@
 										<ul class="entry-meta clearfix">
 											<li><i class="icon-calendar3"></i> 19 Mar 2016</li>
 											<li><a href="blog-small.html"><i class="icon-user"></i></a>
-                                            <a href="blog-small.html">Samuel Schiaffino</a></li>
+                      <a href="blog-small.html">Samuel Schiaffino</a></li>
 										</ul>
 										<div class="entry-content">
 											<p>Ero li, appollaiato al freddo insieme a tantissime altre anime su degli anonimi seggiolini di uno Stadio Olimpico...</p>
@@ -249,7 +256,7 @@
 										</div>
 									</div>
 
-                                    <div class="spost clearfix">
+                  <div class="spost clearfix">
 										<div class="entry-image">
 											<a href="blog-single-small13.html"><img src="images/magazine/small/3.jpg" alt="AS Roma - Edin Dzeko"></a>
 										</div>
@@ -268,7 +275,7 @@
 
 								<div class="col_half nobottommargin col_last">
 
-                                    <div class="spost clearfix">
+                  <div class="spost clearfix">
 										<div class="entry-image">
 											<a href="blog-single-small12.html"><img src="images/magazine/small/25.jpg" alt=""></a>
 										</div>
@@ -283,7 +290,7 @@
 										</div>
 									</div>
 
-                                    <div class="spost clearfix">
+                  <div class="spost clearfix">
 										<div class="entry-image">
 											<a href="blog-single-small11.html"><img src="images/magazine/small/23.jpg" alt=""></a>
 										</div>
@@ -303,9 +310,9 @@
 							</div>
 
 							<!-- Ad Save The Children -->
-                            <div class="bottommargin-lg">
+              <div class="bottommargin-lg">
 								<!-- <img src="images/magazine/ad.jpg" alt="Ad" class="aligncenter notopmargin nobottommargin"> -->
-                            	<a href="http://www.savethechildren.it" title="Save the Children Italia Onlus"><img alt="Save the Children Italia Onlus" src="http://images.savethechildren.it/f/img/banner-istituzionali/46/468x60.gif" width="720" height="90" style="border:none;"/></a>
+                <a href="http://www.savethechildren.it" title="Save the Children Italia Onlus"><img alt="Save the Children Italia Onlus" src="http://images.savethechildren.it/f/img/banner-istituzionali/46/468x60.gif" width="720" height="90" style="border:none;"/></a>
 							</div>
 
 							<div class="col_full bottommargin-lg clearfix">
