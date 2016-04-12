@@ -34,6 +34,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# text editor on text_field
+gem 'tinymce-rails', '~> 4.3', '>= 4.3.8'
+
 # File Upload
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"

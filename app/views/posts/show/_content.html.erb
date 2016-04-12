@@ -47,7 +47,7 @@
 
               <p><%= @post.content_first %></p>
               <blockquote><p><%= @post.content_blockquote %></p></blockquote>
-              <p><%= @post.content_second %></p>
+              <p><%= @post.content_second.html_safe %></p>
 
               <!-- Post Single - Content End -->
 
