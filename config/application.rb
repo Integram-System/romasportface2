@@ -24,6 +24,6 @@ module Romasportface2
     config.active_record.raise_in_transactional_callbacks = true
 
     # tinymce
-    config.tinymce.install = :compile
+    config.tinymce.install = :copy
   end
 end
