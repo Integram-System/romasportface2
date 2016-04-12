@@ -31,19 +31,31 @@
   </div>
   <div class="field">
     <%= f.label :content_short %><br>
-    <%= f.text_field :content_short %>
+    <%= f.text_area :content_short %>
   </div>
   <div class="field">
     <%= f.label :content_first %><br>
-    <%= f.text_field :content_first %>
+    <%= f.text_area :content_first %>
   </div>
   <div class="field">
     <%= f.label :content_blockquote %><br>
-    <%= f.text_field :content_blockquote %>
+    <%= f.text_area :content_blockquote %>
   </div>
   <div class="field">
     <%= f.label :content_second %><br>
     <%= f.text_area :content_second %>
+  </div>
+  <div class="field">
+    <%= f.label :author_first_name %><br>
+    <%= f.text_field :author_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :author_last_name %><br>
+    <%= f.text_field :author_last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :post_date %><br>
+    <%= f.text_field :post_date %>
   </div>
   <div class="actions">
     <%= f.submit %>
