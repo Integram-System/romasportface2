@@ -1,0 +1,102 @@
+<section id="content"><!-- Content -->
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <!-- Post Content
+      ============================================= -->
+      <div class="postcontent nobottommargin clearfix">
+
+        <div class="single-post nobottommargin">
+
+          <!-- Single Post
+          ============================================= -->
+          <div class="entry clearfix">
+
+            <!-- Entry Title
+            ============================================= -->
+            <div class="entry-title">
+              <h2><%= @post.title %></h2>
+            </div><!-- .entry-title end -->
+
+            <!-- Entry Meta
+            ============================================= -->
+            <ul class="entry-meta clearfix">
+              <li><i class="icon-calendar3"></i> 19 Marzo 2016</li>
+              <li><a href="blog-small.html"><i class="icon-user"></i> Samuel Schiaffino</a></li>
+              <!-- <li><i class="icon-folder-open"></i> <a href="#">Serie A</a>, <a href="#">AS Roma</a></li>
+              <li><a href="#"><i class="icon-comments"></i> 43 Comments</a></li>
+              <li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+            </ul><!-- .entry-meta end -->
+
+            <!-- Entry Content
+            ============================================= -->
+            <div class="entry-content notopmargin">
+
+              <!-- Entry Image
+              ============================================= -->
+              <div class="entry-image alignleft">
+                <!-- <a href="#"><%= image_tag "blog/standard/16.jpg", alt: "SS Lazio vs. Sparta Praga" %></a> -->
+                <% if @post.image.present? %>
+                  <%= image_tag attachment_url(@post, :image, :fill, 860, 400), alt: "post image", class: "" %>
+                <% else %>
+                  nessuna immagine
+                <% end %>
+              </div><!-- .entry-image end -->
+
+              <p><%= @post.content_first %></p>
+              <blockquote><p><%= @post.content_blockquote %></p></blockquote>
+              <p><%= @post.content_second %></p>
+
+              <!-- Post Single - Content End -->
+
+              <!-- Tag Cloud
+              ============================================= -->
+              <%= render "mocks/blog_single_small/content_tagcloud" %>
+
+              <div class="clear"></div>
+
+              <!-- Post Single - Share
+              ============================================= -->
+              <%#= render "mocks/blog_single_small/content_share" %>
+
+            </div>
+          </div><!-- .entry end -->
+
+          <!-- Post Navigation
+          ============================================= -->
+          <%#= render "mocks/blog_single_small/content_navigation" %>
+
+          <div class="bottommargin-lg">
+            <a href="http://www.integram-system.com/" target="_blank"><img src="images/magazine/ad5.jpg" alt="Ad - Integram System Web Design Agency"></a>
+          </div>
+
+          <!-- <div class="bottommargin-lg">
+            <a href="http://www.savethechildren.it" title="Save the Children Italia Onlus"><img alt="Save the Children Italia Onlus" src="http://images.savethechildren.it/f/img/banner-istituzionali/46/468x60.gif" width="720" height="90" style="border:none;"/></a>
+          </div> -->
+
+          <div class="line"></div>
+
+          <!-- Post Author Info
+          ============================================= -->
+          <%= render "mocks/blog_single_small/content_author_info" %>
+
+          <!-- <div class="line"></div> -->
+
+          <!-- Comments
+          ============================================= -->
+
+        </div>
+
+      </div><!-- .postcontent end -->
+
+      <!-- Sidebar
+      ============================================= -->
+      <%= render "mocks/blog_single_small/content_sidebar" %>
+
+    </div>
+
+  </div>
+
+</section><!-- #content end -->
