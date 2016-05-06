@@ -1,8 +1,8 @@
 en:
   homepage:
     index:
-      first_header: "Questa è l'homepage"
-      first_paragraph: "il testo verrà preso dal database ma alcuni messaggi sono passati dall'applicazione ed è quindi bene che vengano tradotti per essere pronti a supportare più lingue."
+      first_header: "This is the homepage"
+      first_paragraph: "the text is taken from the database but some messages are passed from the application and is than good to translate them to be ready for multilanguages."
 
 # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other

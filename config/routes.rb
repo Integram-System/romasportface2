@@ -1,20 +1,22 @@
 Rails.application.routes.draw do
+  scope "(:locale)", locale: /en|it/ do
 
-  #root 'users#show'
-  root 'homepage#index'
+    #root 'users#show'
+    root 'homepage#index'
 
-  #get 'users/show'
+    #get 'users/show'
 
-  devise_for :users
-  resources :users
+    devise_for :users
+    resources :users
 
-  resources :posts
+    resources :posts
 
-  resources :blogs
+    resources :blogs
 
-  get 'mocks/blog_small'
-  get 'mocks/blog_single_small'
-  get 'mocks/blog_single_small01'
-  get 'mocks/index'
-  get 'mocks/index_magazine'
+    get 'mocks/blog_small'
+    get 'mocks/blog_single_small'
+    get 'mocks/blog_single_small01'
+    get 'mocks/index'
+    get 'mocks/index_magazine'
+  end
 end
