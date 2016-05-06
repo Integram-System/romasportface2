@@ -34,6 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# --- Added gems ---
+
 # text editor on text_field
 gem 'tinymce-rails', '~> 4.3', '>= 4.3.8'
 
@@ -41,6 +43,9 @@ gem 'tinymce-rails', '~> 4.3', '>= 4.3.8'
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
 gem 'refile-fog', group: :production
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
