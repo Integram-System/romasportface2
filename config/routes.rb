@@ -5,9 +5,10 @@ Rails.application.routes.draw do
     root 'homepage#index'
 
     #get 'users/show'
-
+    get 'users/show', as: :user_root # creates user_root_path (default path after sign_in)
     devise_for :users
     resources :users
+
 
     resources :posts
 
