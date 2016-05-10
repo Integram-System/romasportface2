@@ -57,7 +57,8 @@
   </div>
   <div class="field">
     <%= f.label :post_date %><br>
-    <%= f.text_field :post_date %>
+    <%#= f.text_field :post_date %>
+    <%= f.date_select :post_date %>
   </div>
   <div class="actions">
     <%= f.submit %>

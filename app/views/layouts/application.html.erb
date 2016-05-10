@@ -10,6 +10,13 @@
 </head>
 <body class="stretched no-transition">
 
+  <% flash.each do |name,msg| %>
+    <div class='alert alert-<%= name == :notice ? 'success' : 'error' %>'>
+      <a class='close' data-dismiss='alert'>&#215;</a>
+      <%= msg %>
+    </div>
+  <% end %>
+  
   <%= yield %>
 
   <%= javascript_include_tag 'functions', 'data-turbolinks-track' => false %>

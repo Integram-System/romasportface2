@@ -1,1 +1,1 @@
-plugin-3e4eef4b7090cdc77a36a32490d0041f5c6633eb337e756d45ad78211a169ca5.js
+tinymce.PluginManager.add("hr",function(a){a.addCommand("InsertHorizontalRule",function(){a.execCommand("mceInsertContent",!1,"<hr />")}),a.addButton("hr",{icon:"hr",tooltip:"Horizontal line",cmd:"InsertHorizontalRule"}),a.addMenuItem("hr",{icon:"hr",text:"Horizontal line",cmd:"InsertHorizontalRule",context:"insert"})});
