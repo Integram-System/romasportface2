@@ -4,8 +4,8 @@ require "refile/fog"
 
 credentials = {
   provider: "aws",
-  aws_access_key_id: "AKIAIACQSMRHGT5L47YA",
-  aws_secret_access_key: "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",
+  aws_access_key_id: "AKIAJ7YV3F2UDZXZDY3Q",
+  aws_secret_access_key: "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",
   region: "eu-central-1",
   directory: "romasportfaceimages"
 }
